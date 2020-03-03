@@ -20,4 +20,4 @@ Route::get('/like', 'LikeController@index');     #イイネ一覧画面のpath�
 Route::get('/github', 'LoginController@index');  #githubでのログイン画面のpathのroute
 
 Route::get('/top','TopController@index');  #css適用確認用
-Route::get('/signup','SignupController@index');  #css適用確認用
+Route::get('/signup','SignupController@index');  #css適用確認用  投稿画面に変更？

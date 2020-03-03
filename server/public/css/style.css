@@ -31,3 +31,13 @@ body, h1 {
 .form_item {
   margin-top:20px;
 }
+
+/* ログイン画面のスタイル */
+.login-box {
+  margin: 300px auto;
+  padding: 50px;
+  width: 300px;
+  border: solid 3px #cfcfcf;
+  border-radius: 10px;
+  text-align:  center;
+}

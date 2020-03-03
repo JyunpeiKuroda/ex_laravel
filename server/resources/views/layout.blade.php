@@ -11,8 +11,5 @@
           <h1>なに食べた？ ヘッダーtest</h1>
       </div>
       @yield('content')
-      <div class="footer">
-          <p>copyright 2019</p>
-      </div>
     </body>
 </html>
