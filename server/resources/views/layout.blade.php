@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" charset="utf-8">
+        <title>@yield('title')</title>
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    </head>
+    <body>
+      <div class="header">
+          <h1>なに食べた？ ヘッダーtest</h1>
+      </div>
+      @yield('content')
+      <div class="footer">
+          <p>copyright 2019</p>
+      </div>
+    </body>
+</html>

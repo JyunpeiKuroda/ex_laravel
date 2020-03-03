@@ -18,3 +18,6 @@ Route::get('/', 'HomeController@index');        #ホーム画面のpathのroute
 Route::get('/posts', 'PostsController@index');     #投稿画面のpathのroute
 Route::get('/like', 'LikeController@index');     #イイネ一覧画面のpathのroute
 Route::get('/github', 'LoginController@index');  #githubでのログイン画面のpathのroute
+
+Route::get('/top','TopController@index');  #css適用確認用
+Route::get('/signup','SignupController@index');  #css適用確認用
