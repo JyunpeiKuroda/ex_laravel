@@ -14,4 +14,7 @@
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', 'PostsController@index');
+Route::get('/', 'HomeController@index');        #ホーム画面のpathのroute
+Route::get('/posts', 'PostsController@index');     #投稿画面のpathのroute
+Route::get('/like', 'LikeController@index');     #イイネ一覧画面のpathのroute
+Route::get('/github', 'LoginController@index');  #githubでのログイン画面のpathのroute
