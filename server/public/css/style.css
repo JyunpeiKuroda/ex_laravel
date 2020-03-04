@@ -42,3 +42,13 @@ body, h1 {
   border-radius: 10px;
   text-align:  center;
 }
+
+/* post画面のボタンの中央寄せ */
+form {
+  text-align:  center;
+}
+/* 投稿画像のプレビューイメージのサイズ (post)*/
+img#previewImage {
+  width: 350px;
+}
+

@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout.h&f')
 @section('title', 'トップページ')
 @section('content')
 トップページ

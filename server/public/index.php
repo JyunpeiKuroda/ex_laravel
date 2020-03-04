@@ -59,5 +59,5 @@ $response->send();
 
 $kernel->terminate($request, $response);
 
-// SCSSをCSSに変換する処理
-SassCompiler::run("scss/", "css/");
+// // SCSSをCSSに変換する処理
+// SassCompiler::run("scss/", "css/");

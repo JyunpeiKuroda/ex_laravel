@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layout.h&f')
 @section('title', '新規登録')
 @section('content')
 <div class="form_box">
