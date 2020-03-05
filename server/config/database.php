@@ -48,7 +48,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => env('DB_HOST', 'db-host'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'database'),
+            'database' => env('DB_DATABASE', 'laravel_pjt'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'password'),
             'unix_socket' => env('DB_SOCKET', ''),
