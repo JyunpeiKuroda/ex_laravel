@@ -12,10 +12,10 @@ class PostsTableSeeder extends Seeder
     public function run()
     {
         // articlesテーブルにデータをinsert
-        DB::table('articles')->insert([
-            ['body' => '内容1の文章'],
-            ['body' => '内容2の文章'],
-            ['body' => '内容3の文章'],
+        DB::table('Posts')->insert([
+            ['body' => '内容1'],
+            ['body' => '内容2'],
+            ['body' => '内容3'],
         ]);
     }
 }
