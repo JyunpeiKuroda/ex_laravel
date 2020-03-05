@@ -13,7 +13,7 @@ class PostsController extends Controller
      */
     public function index()
     {
-        //
+        return view('home/post');
     }
 
     /**
@@ -82,15 +82,3 @@ class PostsController extends Controller
         //
     }
 }
-
-// <?php
-
-// namespace App\Http\Controllers;
-
-// class PostsController extends Controller
-// {
-//     public function index()
-//     {
-//         return view('home/post');
-//     }
-// }
