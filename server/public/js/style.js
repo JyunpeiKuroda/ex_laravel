@@ -1,9 +1,9 @@
+//投稿画面での画像uprode時のプレビューの処理
 function imgPreView(event) {
   var file = event.target.files[0];
   var reader = new FileReader();
   var preview = document.getElementById("preview");
   var previewImage = document.getElementById("previewImage");
-
   if(previewImage != null) {
     preview.removeChild(previewImage);
   }
@@ -13,6 +13,6 @@ function imgPreView(event) {
     img.setAttribute("id", "previewImage");
     preview.appendChild(img);
   };
-
   reader.readAsDataURL(file);
 }
+
