@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
-class PostsController extends Controller
+use App\Post;
+use Validator;
+class PostController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,11 @@ class PostsController extends Controller
      */
     public function index()
     {
-        return view('home/post');
+        // return view('home/post');
+        $posts = Post::all();
+        return view('home.post', ['posts' => $posts]); // ビューの描画
+        // return $items->toArray(); // JSONデータで描画
+        // return $posts;
     }
 
     /**
