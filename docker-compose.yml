@@ -23,14 +23,14 @@ services:
     container_name: db-host
     environment: # DBの設定
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: laravel_pjt
-      MYSQL_USER: root
-      MYSQL_PASSWORD: password
+      MYSQL_DATABASE: database
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: docker
       TZ: 'Asia/Tokyo'
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci # コンテナ起動時のコマンドを記述
     volumes: # コンテナのDBファイルを./docker/db/に永続化する
-    - ./docker/db/data:/var/lib/mysql # データベースのデータを永続化するためにホストのボリュームをマウント#もしデータの差異があるならここ。
+    - ./docker/db/data:/var/lib/mysql # データベースのデータを永続化するためにホストのボリュームをマウント
     - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf # MySQLの設定ファイルをマウント
-    # - ./docker/db/sql:/docker-entrypoint-initdb.d
+    - ./docker/db/sql:/docker-entrypoint-initdb.d
     ports:
     - 3306:3306 # ゲストとホストそれぞれの3306番ポートで接続
